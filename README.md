@@ -17,6 +17,15 @@ A simple user authentication service built using **Node.js**, **Express**, **MyS
 
 ## 📁 Project Structure
 
+user-auth-service/
+├── db.js # MySQL connection setup
+├── middleware/
+│ └── auth.js # JWT verification middleware
+├── routes/
+│ └── auth.js # Register & Login routes
+├── .env # Environment variables
+├── package.json # Node.js dependencies
+├── server.js # Entry point
 
 ---
 
@@ -37,8 +46,11 @@ A simple user authentication service built using **Node.js**, **Express**, **MyS
    ```bash
    git clone https://github.com/your-username/user-auth-service.git
    cd user-auth-service
-
+   
+2. Install dependencies
 npm install
+
+3. Create .env file
 
 PORT=5000
 DB_HOST=localhost
@@ -46,6 +58,8 @@ DB_USER=root
 DB_PASSWORD=your_mysql_password
 DB_NAME=auth_db
 JWT_SECRET=your_jwt_secret
+
+4. Setup MySQL Database
 
 CREATE DATABASE IF NOT EXISTS auth_db;
 
@@ -58,3 +72,5 @@ CREATE TABLE users (
   password VARCHAR(255)
 );
 
+5. Run the server
+   npm start
