@@ -1,0 +1,9 @@
+user-auth-service/
+├── db.js
+├── middleware/
+│   └── auth.js
+├── routes/
+│   └── auth.js
+├── .env
+├── package.json
+├── server.js
